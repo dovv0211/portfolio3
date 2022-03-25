@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My portfolio</title>
+	<link rel="stylesheet" type="text/css" href="fonts/remixicon.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+ <header id="header">
+ 	<div class="container navbar">
+ 		<a href="index.html" class="logo">normamatov davlat</a>
+ 		
+ 		<nav class="navbar-menu">
+ 			<ul>
+ 				<li><a href="#home">Home</a></li>
+ 				<li><a href="#about">about me</a></li>
+ 				<li><a href="#projects">projects</a></li>
+ 				<li><a href="#contacts">contacts</a></li>
+ 			</ul>
+ 		</nav>
+ 	</div>
+ </header>
+
+<div class="top-baner" id="home">
+	<div class="container">
+		<h1>I’m John.</h1>
+	<h2>I build beautiful <span class="highlight">responsive websites</span></h2>
+
+	<div class="button-block">
+		<a href="#projects class=banner-button">view portfolio</a>
+		<a href="#contacts class=banner-button">hire me</a>
+	</div></div>
+</div>
+
+<section id="about">
+	<div class="container flex">
+		<div class="left-side">
+			<h3> I can help.</h3>
+		</div>
+		<div class="right-side">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="my-skills">
+				<div class="proggres-bar skill1">
+					<div class="progress-bar-fill"> </div>
+					<span>Html/css</span>
+					
+				</div>
+						<div class="proggres-bar skill2">
+					<div class="progress-bar-fill"> </div>
+					<span>Html/css</span>
+					
+				</div>				
+				<div class="proggres-bar skill3">
+					<div class="progress-bar-fill"> </div>
+					<span>Html/css</span>
+					
+				</div>
+								<div class="proggres-bar skill4">
+					<div class="progress-bar-fill"> </div>
+					<span>Html/css</span>
+					
+				</div>
+		
+			</div>
+		</div>
+	</div>
+</section>
+<section id="projects">
+	<div class="flex">
+	<div class="project project1"> 
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project2">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project3">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project4">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project5">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project6">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project7">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project8">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project9">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	<div class="project project10">
+		<h4>Моя великая фотография</h4>
+		<h4>Photo</h4>
+	</div>
+	</div>
+</section>
+<section id="contacts">
+	<div class="container flex">
+		<div class="left-side">
+			<h3>Contacts us</h3>
+			<p>lets work togryher sumbit your dwtails</p>
+		</div>	
+			<div class="right-side">
+				<form>
+					<input type="text" class="form-control name" placeholder="leave a massage">
+					<input type="text" class="form-control email" placeholder="leave a massage">
+					<input type="text" class="form-control budget" placeholder="leave a massage">
+					<textarea class="form-control message" placeholder="leave a massage"></textarea>
+					<button class="submit-button" type="submit">Send Inqury</button>
+				</form>
+			</div>	
+	</div>
+</section>
+<footer id="footer">
+	<div class="container flex">
+		<span>YOUR NAME</span>
+		<div class="social-links">
+			<a href="#"><i class="ri-mail-fill"></i></a>
+			<a href="#"><i class="ri-facebook-fill"></i></a>
+			<a href="#"><i class="ri-twitter-fill"></i></a>
+			<a href="#"><i class="ri-behance-fill"></i></a>
+			<a href="#"><i class="ri-dribbble-fill"></i></a>
+			<a href="#"><i class="ri-instagram-fill"></i></a>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+ <script type="text/javascript"> 
+ $('header ul li a[href*="#"]').click(function() { 
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        && location.hostname == this.hostname) { 
+            var $target = $(this.hash); 
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']'); 
+            if ($target.length) { 
+                var targetOffset = $target.offset().top - 100; 
+                $('html,body').animate({scrollTop: targetOffset}, 1000); 
+                return false; 
+            } 
+        } 
+    }); 
+ </script>
+</body>
+</html>
